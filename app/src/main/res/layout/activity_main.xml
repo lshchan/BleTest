@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/t1"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:id="@+id/SettingName"
+        android:text="Setting Name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/t2"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:id="@+id/ON"
+        android:text="ON"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:id="@+id/t3"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:id="@+id/ON_MT"
+        android:text="ON MT"
+        />
+ //不让EDITTEXT获得默认的焦点，不弹出输入框
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_weight="1"
+                android:id="@+id/Display"
+                android:text="Display"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="35sp"
+                android:layout_weight="1"
+                android:id="@+id/Avaliable_Time"
+                android:text="Avaliable Time"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:layout_weight="1"
+            android:id="@+id/Start_search"
+            android:text="Start search"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:layout_weight="1"
+            android:id="@+id/Start_Seve"
+            android:text="Start Sever"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_weight="1"
+        android:id="@+id/Link_to_Sever"
+        android:text="Link to Sever"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        android:layout_weight="1"
+        android:id="@+id/Send"
+        android:text="Send"
+        />
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/listview"
+        >
+    </ListView>
+</LinearLayout>
